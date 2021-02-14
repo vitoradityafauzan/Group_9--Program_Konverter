@@ -1,6 +1,6 @@
-## GROUP 9 - PROGRAM KONVERTER
+# GROUP 9 - PROGRAM KONVERTER
 
-### Nama Anggota:
+## Nama Anggota:
 
 |Nama Anggota|NIM  |
 |--|--|
@@ -8,14 +8,20 @@
 |Rahmanda Trinova Putra  | 19104051 |
 |Vito Raditya Fauzan  | 19104063 |
 
-### Latar Belakang
-efe
+## Latar Belakang
+test
 
-### Tujuan
-ef
+## Tujuan
+test
 
-### Fitur
-ef
+## Fitur
 
-### Class Diagram
-<img src = "images/ClassDiagramProgram.jpg">
+#### 1. Konvert Suhu
+ test
+#### 2. Konvert Panjang & Massa
+test
+#### 2. Konvert Panjang & Massa
+test
+
+## Class Diagram
+<img src = "images/ClassDiagramProgram.jpg" style="height: 50%; width: 50%;border: 1px solid #ddd; border-radius: 4px;">
