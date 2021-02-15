@@ -1,14 +1,18 @@
+//method function suhu
 function Suhu(paraSuhu) {
+  //deklarasi dan inisialisasi atribut
   let bilang = paraSuhu;
   let c, f, k, r, choice1;
 
+  // START function sekunder menentukan hasil
   this.setHasil = function() {
       console.log("1. Celsius ");
       console.log("2. Fahrenheit ");
       console.log("3. Kelvin ");
       console.log("4. Reamur ");
-      choice1 = prompt("Masukan Jenis Suhu\t: ");
+      choice1 = prompt("Masukan Jenis Suhu\t: "); // inisialisasi atribut untuk menjadi kunci percabangan
 
+      //Start Percabangan menentukan perhitungan konversi
       if (choice1 == 1) {
         c = bilang;
         f = (bilang * 9/5) + 32;
@@ -36,8 +40,11 @@ function Suhu(paraSuhu) {
       } else {
         console.log("Input Anda Salah !");
       }
+      //End
   }
+  //END
 
+  // function sekunder menampilkan hasil
   this.getHasil = function() {
       console.log("=== Hasil Konversi ===")
       console.log("Celsius\t\t: ", c);
@@ -47,13 +54,17 @@ function Suhu(paraSuhu) {
   }
 }
 
+//Method function panjang & massa lokal
 function PanBer(paramPB) {
+  //deklarasi dan inisialisasi atribut
   let input = paramPB;
   let k, h, d, mg, de, c, m, milih, choice2;
 
+  //START function sekunder menampilkan daftar
   this.list = function(paramList) {
     milih = paramList;
 
+    //Percabangan menentukan isi daftar
     if (milih == 1) {
       console.log("\nSatuan Panjang");
       console.log("1. Kilo Meter");
@@ -79,7 +90,9 @@ function PanBer(paramPB) {
     }
 
   }
+  //END
 
+  //START function sekunder menentukan hasil
   this.setHasil = function(paraChoice) {
     choice2 = paraChoice;
 
@@ -151,7 +164,9 @@ function PanBer(paramPB) {
     }
 
   }
+  //END
 
+  // function sekunder menampilkan hasil
   this.getHasil = function() {
     if (milih == 1) {
       console.log("Kilo Meter\t: " + k);
@@ -175,11 +190,15 @@ function PanBer(paramPB) {
   }
 }
 
+//Method function panjang & massa internasional
 function PanBerInt(paraPBI) {
+  //deklarasi dan inisialisasi atribut
   let input2 = paraPBI;
   let kg, yard, feet, inchi, meter, pound;
 
+  //function sekunder menentukan & menampilkan hasil
   this.panjang = function() {
+    //inisialisasi atribut
     yard = input2 * 1.09;
     feet = input2 * 3.3;
     inchi = input2 * 39.3701;
@@ -192,6 +211,7 @@ function PanBerInt(paraPBI) {
     console.log("Inchi\t: " + inchi);
   }
 
+  // function sekunder menentukan & menampilkan hasil
   this.berat = function() {
     pound = input2 * 2.2046;
 
@@ -202,9 +222,12 @@ function PanBerInt(paraPBI) {
   }
 }
 
+//Method function operasi bilangan
 function Bilangan(paraBilang) {
+  //deklarasi dan inisialisasi atribut dengan object Number
   var bil = new Number(paraBilang);
 
+  //function sekunder menampilkan hasil
   this.getHasil = function() {
     console.log("\n");
     console.log("=== Hasil Konversi ===");
@@ -215,9 +238,11 @@ function Bilangan(paraBilang) {
   }
 }
 
+//deklarasi dan inisialisasi atribut
 let suhu, bilangan, panBer, panBerInt;
 let repeat = true;
 
+//START LOOP Pengulangan Program
 while (repeat == true) {
   console.log("\t<====================>");
   console.log("\n\t\tSelamat Datang");
@@ -227,12 +252,13 @@ while (repeat == true) {
   console.log("b. Panjang & Massa");
   console.log("c. Operasi Bilangan");
   console.log("d. Keluar");
-  var pilih = prompt("Masukan Pilihan Konvertor\t: ");
+  var pilih = prompt("Masukan Pilihan Konvertor\t: "); //Atribut kunci untuk percabangan
   console.log("\n")
 
-  let repeat2 = true;
+  let repeat2 = true; //Atribut kunci untuk pengulangan
   switch(pilih) {
     case "a":
+    //START Proses konversi suhu
       while(repeat2 == true) {
         console.log("< === Konvertor Suhu === >");
         var input3 = prompt("Masukan Nilai Suhu\t: ");
@@ -248,9 +274,11 @@ while (repeat == true) {
         }
         console.log("\n\n");
       }
+    //END
     break;
 
     case "b":
+    //START Proses konversi Panjang & Massa
     while(repeat2 == true) {
       console.log("< === Konverter Panjang Dan Massa === >");
       console.log("1. Lokal")
@@ -258,6 +286,7 @@ while (repeat == true) {
       var milih2 = prompt("Masukan Pilihan\t: ");
 
       switch(milih2) {
+        //Start Konversi Lokal
         case "1":
           console.log("\n1. Panjang");
           console.log("2. Berat");
@@ -280,9 +309,11 @@ while (repeat == true) {
             repeat2 = false;
           }
           console.log("\n\n");
+        //End
         break;
 
         case "2":
+        //Start Konversi Internasional
           console.log("\n1. Panjang");
           console.log("2. Berat");
           milih3 = prompt("Masukan Pilihan\t: ");
@@ -307,6 +338,7 @@ while (repeat == true) {
             repeat2 = false;
           }
           console.log("\n\n");
+        //End
         break;
 
         default:
@@ -321,9 +353,11 @@ while (repeat == true) {
         break;
       }
     }
+    //END
     break;
 
     case "c":
+    //START Proses konversi operasi bilanganjkkl;
       while (repeat2 == true) {
         console.log("< === Konverter Operasi Bilangan === >");
         var bil2 = prompt("Masukan Bilangan Desimal\t: ");
@@ -338,9 +372,11 @@ while (repeat == true) {
             }
             console.log("\n\n");
       }
+    //END
     break;
 
     case "d":
+    //Proses keluar program
       repeat = false;
       console.log("TerimaKasih :)");
       
@@ -351,3 +387,4 @@ while (repeat == true) {
     break;
   }
 }
+//END LOOP
