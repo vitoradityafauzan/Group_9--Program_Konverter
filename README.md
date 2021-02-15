@@ -57,5 +57,5 @@
 
 
 ### => Video Penjelasan
-<a href = "https://www.youtube.com/watch?v=RGaCOZ3d1Go&feature=youtu.be">Link Youtube</a>
-<iframe width="660" height="415" src="https://www.youtube.com/embed/RGaCOZ3d1Go" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--<a href = "https://www.youtube.com/watch?v=RGaCOZ3d1Go&feature=youtu.be">Link Youtube</a>-->
+[![Click To Play](https://img.youtube.com/vi/RGaCOZ3d1Go/0.jpg)](https://www.youtube.com/watch?v=RGaCOZ3d1Go "Click To Play")
